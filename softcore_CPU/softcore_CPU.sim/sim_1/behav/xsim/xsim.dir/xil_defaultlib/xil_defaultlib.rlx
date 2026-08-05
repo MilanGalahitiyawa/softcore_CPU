@@ -1,0 +1,11 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+D:/Git/softcore_CPU/alu.v,1785856280,verilog,,D:/Git/softcore_CPU/cpu.v,,alu,,,../../../../../../../AMD/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/Git/softcore_CPU/cpu.v,1785856280,verilog,,D:/Git/softcore_CPU/data_ram.v,,cpu,,,../../../../../../../AMD/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/Git/softcore_CPU/cpu_tb.v,1785856280,verilog,,,,cpu_tb,,,../../../../../../../AMD/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/Git/softcore_CPU/data_ram.v,1785856280,verilog,,D:/Git/softcore_CPU/instr_rom.v,,data_ram,,,../../../../../../../AMD/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/Git/softcore_CPU/instr_rom.v,1785856280,verilog,,D:/Git/softcore_CPU/register_file.v,,instr_rom,,,../../../../../../../AMD/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/Git/softcore_CPU/register_file.v,1785856280,verilog,,D:/Git/softcore_CPU/cpu_tb.v,,register_file,,,../../../../../../../AMD/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/Git/softcore_CPU/softcore_CPU/softcore_CPU.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,

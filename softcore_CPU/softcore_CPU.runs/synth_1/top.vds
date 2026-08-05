@@ -1,0 +1,315 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Wed Aug  5 23:04:31 2026
+# Process ID         : 12348
+# Current directory  : D:/Git/softcore_CPU/softcore_CPU/softcore_CPU.runs/synth_1
+# Command line       : vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file           : D:/Git/softcore_CPU/softcore_CPU/softcore_CPU.runs/synth_1/top.vds
+# Journal file       : D:/Git/softcore_CPU/softcore_CPU/softcore_CPU.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-77IKTDK
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 2
+# CPU Logical cores  : 4
+# Host memory        : 8463 MB
+# Swap memory        : 8053 MB
+# Total Virtual      : 16516 MB
+# Available Virtual  : 6868 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 492.742 ; gain = 211.688
+Command: read_checkpoint -auto_incremental -incremental D:/Git/softcore_CPU/softcore_CPU/softcore_CPU.srcs/utils_1/imports/synth_1/cpu_tb.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Git/softcore_CPU/softcore_CPU/softcore_CPU.srcs/utils_1/imports/synth_1/cpu_tb.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4416
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1177.438 ; gain = 494.477
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/Git/softcore_CPU/top.v:13]
+INFO: [Synth 8-6157] synthesizing module 'cpu' [D:/Git/softcore_CPU/cpu.v:16]
+INFO: [Synth 8-6157] synthesizing module 'instr_rom' [D:/Git/softcore_CPU/instr_rom.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'instr_rom' (0#1) [D:/Git/softcore_CPU/instr_rom.v:13]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [D:/Git/softcore_CPU/register_file.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (0#1) [D:/Git/softcore_CPU/register_file.v:6]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/Git/softcore_CPU/alu.v:8]
+INFO: [Synth 8-226] default block is never used [D:/Git/softcore_CPU/alu.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [D:/Git/softcore_CPU/alu.v:8]
+INFO: [Synth 8-6157] synthesizing module 'data_ram' [D:/Git/softcore_CPU/data_ram.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'data_ram' (0#1) [D:/Git/softcore_CPU/data_ram.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (0#1) [D:/Git/softcore_CPU/cpu.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/Git/softcore_CPU/top.v:13]
+WARNING: [Synth 8-3917] design top has port led[15] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[14] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[13] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[12] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[11] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[8] driven by constant 0
+WARNING: [Synth 8-3917] design top has port dp driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1285.168 ; gain = 602.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1285.168 ; gain = 602.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1285.168 ; gain = 602.207
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1285.168 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Git/softcore_CPU/basys3.xdc]
+Finished Parsing XDC File [D:/Git/softcore_CPU/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Git/softcore_CPU/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1363.598 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1363.598 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1363.598 ; gain = 680.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1363.598 ; gain = 680.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1363.598 ; gain = 680.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint D:/Git/softcore_CPU/softcore_CPU/softcore_CPU.srcs/utils_1/imports/synth_1/cpu_tb.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1363.598 ; gain = 680.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1363.598 ; gain = 680.637
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'cpu'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 S_FETCH |                              001 |                               00
+                S_FETCH2 |                              010 |                               01
+                  S_EXEC |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'cpu'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1363.598 ; gain = 680.637
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 1     
+	   3 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 12    
+	                2 Bit    Registers := 1     
++---RAMs : 
+	               2K Bit	(256 X 8 bit)          RAMs := 1     
++---Muxes : 
+	 257 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 4     
+	   4 Input    3 Bit        Muxes := 2     
+	   7 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 11    
+	   3 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design top has port led[15] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[14] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[13] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[12] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[11] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[8] driven by constant 0
+WARNING: [Synth 8-3917] design top has port dp driven by constant 1
+WARNING: [Synth 8-3917] design top has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design top has port an[2] driven by constant 1
+WARNING: [Synth 8-6014] Unused sequential element cpu0/ram0/mem_reg was removed. 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 1363.598 ; gain = 680.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 1493.754 ; gain = 810.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:05 . Memory (MB): peak = 1535.137 ; gain = 852.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:01:05 . Memory (MB): peak = 1535.191 ; gain = 852.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:12 ; elapsed = 00:01:20 . Memory (MB): peak = 1748.914 ; gain = 1065.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:12 ; elapsed = 00:01:20 . Memory (MB): peak = 1748.914 ; gain = 1065.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:12 ; elapsed = 00:01:20 . Memory (MB): peak = 1748.914 ; gain = 1065.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:12 ; elapsed = 00:01:20 . Memory (MB): peak = 1748.914 ; gain = 1065.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:12 ; elapsed = 00:01:20 . Memory (MB): peak = 1748.914 ; gain = 1065.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:12 ; elapsed = 00:01:20 . Memory (MB): peak = 1748.914 ; gain = 1065.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    16|
+|3     |LUT1   |     2|
+|4     |LUT2   |    24|
+|5     |LUT3   |    30|
+|6     |LUT4   |    18|
+|7     |LUT5   |    36|
+|8     |LUT6   |    60|
+|9     |MUXF7  |     7|
+|10    |FDCE   |    79|
+|11    |FDPE   |     1|
+|12    |FDRE   |    45|
+|13    |IBUF   |     4|
+|14    |OBUF   |    28|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:12 ; elapsed = 00:01:20 . Memory (MB): peak = 1748.914 ; gain = 1065.953
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:01:14 . Memory (MB): peak = 1748.914 ; gain = 987.523
+Synthesis Optimization Complete : Time (s): cpu = 00:01:13 ; elapsed = 00:01:20 . Memory (MB): peak = 1748.914 ; gain = 1065.953
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1755.621 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1758.891 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 3b3b7932
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 22 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:21 ; elapsed = 00:01:35 . Memory (MB): peak = 1758.891 ; gain = 1261.629
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1758.891 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Git/softcore_CPU/softcore_CPU/softcore_CPU.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Aug  5 23:06:27 2026...

@@ -1,0 +1,636 @@
+$date
+   Wed Aug  5 02:13:58 2026
+$end
+
+$version
+  2025.1.0
+  $dumpfile ("cpu_tb.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module cpu_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var reg 1 # en $end
+$var wire 8 $ dbg_pc [7:0] $end
+$var wire 8 % dbg_r1 [7:0] $end
+$var wire 8 & dbg_r2 [7:0] $end
+$var wire 8 ' dbg_r3 [7:0] $end
+$var integer 32 ( c [31:0] $end
+$scope module dut $end
+$var wire 1 ) clk $end
+$var wire 1 * rst $end
+$var wire 1 + en $end
+$var wire 8 $ dbg_pc [7:0] $end
+$var wire 8 % dbg_reg1 [7:0] $end
+$var wire 8 & dbg_reg2 [7:0] $end
+$var wire 8 ' dbg_reg3 [7:0] $end
+$var reg 8 , pc [7:0] $end
+$var reg 8 - ir [7:0] $end
+$var reg 8 . ir2 [7:0] $end
+$var reg 2 / state [1:0] $end
+$var wire 3 0 opcode [2:0] $end
+$var wire 3 1 rd [2:0] $end
+$var wire 8 2 rom_data [7:0] $end
+$var wire 8 3 rs1_data [7:0] $end
+$var wire 8 4 rs2_data [7:0] $end
+$var wire 8 5 alu_result [7:0] $end
+$var wire 1 6 alu_zero $end
+$var wire 1 7 alu_carry $end
+$var wire 1 8 alu_neg $end
+$var wire 8 9 ram_rd_data [7:0] $end
+$var reg 3 : rs1_addr [2:0] $end
+$var reg 3 ; rs2_addr [2:0] $end
+$var reg 3 < alu_op [2:0] $end
+$var reg 8 = wr_data [7:0] $end
+$var reg 1 > reg_we $end
+$var reg 1 ? ram_we $end
+$scope module rom0 $end
+$var wire 8 @ addr [7:0] $end
+$var wire 8 2 data [7:0] $end
+$var integer 32 A i [31:0] $end
+$upscope $end
+$scope module rf0 $end
+$var wire 1 ) clk $end
+$var wire 1 * rst $end
+$var wire 1 B we $end
+$var wire 3 1 rd_addr [2:0] $end
+$var wire 3 C rs1_addr [2:0] $end
+$var wire 3 D rs2_addr [2:0] $end
+$var wire 8 E wr_data [7:0] $end
+$var wire 8 3 rs1_data [7:0] $end
+$var wire 8 4 rs2_data [7:0] $end
+$var wire 8 % dbg_r1 [7:0] $end
+$var wire 8 & dbg_r2 [7:0] $end
+$var wire 8 ' dbg_r3 [7:0] $end
+$var integer 32 F i [31:0] $end
+$upscope $end
+$scope module alu0 $end
+$var wire 8 3 a [7:0] $end
+$var wire 8 4 b [7:0] $end
+$var wire 3 G op [2:0] $end
+$var wire 8 5 result [7:0] $end
+$var wire 1 6 zero $end
+$var wire 1 7 carry $end
+$var wire 1 8 negative $end
+$var reg 9 H full_result [8:0] $end
+$upscope $end
+$scope module ram0 $end
+$var wire 1 ) clk $end
+$var wire 1 I we $end
+$var wire 8 4 addr [7:0] $end
+$var wire 8 3 wr_data [7:0] $end
+$var reg 8 J rd_data [7:0] $end
+$var integer 32 K i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+1"
+1#
+b0 $
+b0 %
+b0 &
+b0 '
+b0 (
+0)
+1*
+1+
+b0 ,
+b0 -
+b0 .
+b0 /
+b0 0
+b0 1
+b100110 2
+b0 3
+b0 4
+b0 5
+16
+07
+08
+b0 9
+b0 :
+b0 ;
+b0 <
+b0 =
+0>
+0?
+b0 @
+b100000000 A
+0B
+b0 C
+b0 D
+b0 E
+bx F
+b0 G
+b0 H
+0I
+b0 J
+b100000000 K
+$end
+
+#5000
+1!
+1)
+
+#10000
+0!
+0)
+
+#15000
+1!
+1)
+
+#20000
+0!
+0"
+0)
+0*
+
+#25000
+1!
+b1 $
+1)
+b1 ,
+b100110 -
+b1 /
+b1 0
+b1 1
+b1010 2
+b1 @
+
+#26000
+b1 (
+
+#30000
+0!
+0)
+
+#35000
+1!
+b10 $
+1)
+b10 ,
+b1010 .
+b10 /
+b101010 2
+b1010 =
+1>
+b10 @
+1B
+b1010 E
+
+#36000
+b10 (
+
+#40000
+0!
+0)
+
+#45000
+1!
+b1010 %
+1)
+b0 /
+b1010 =
+0>
+0B
+
+#46000
+b11 (
+
+#50000
+0!
+0)
+
+#55000
+1!
+b11 $
+1)
+b11 ,
+b101010 -
+b1 /
+b10 1
+b10100 2
+b1010 =
+b11 @
+
+#56000
+b100 (
+
+#60000
+0!
+0)
+
+#65000
+1!
+b100 $
+1)
+b100 ,
+b10100 .
+b10 /
+b1001100 2
+b10100 =
+1>
+b100 @
+1B
+b10100 E
+
+#66000
+b101 (
+
+#70000
+0!
+0)
+
+#75000
+1!
+b10100 &
+1)
+b0 /
+b10100 =
+0>
+0B
+
+#76000
+b110 (
+
+#80000
+0!
+0)
+
+#85000
+1!
+b101 $
+1)
+b101 ,
+b1001100 -
+b1 /
+b10 0
+b11 1
+b101000 2
+b101 ;
+b0 =
+b101 @
+b101 D
+b0 E
+
+#86000
+b111 (
+
+#90000
+0!
+0)
+
+#95000
+1!
+b110 $
+1)
+b110 ,
+b101000 .
+b10 /
+b11001100 2
+b1010 3
+b10100 4
+b11110 5
+06
+b1 :
+b10 ;
+b11110 =
+1>
+b110 @
+1B
+b1 C
+b10 D
+b11110 E
+b11110 H
+
+#96000
+b1000 (
+
+#100000
+0!
+0)
+
+#105000
+1!
+b11110 '
+1)
+b0 /
+b1 :
+b10 ;
+b11110 =
+0>
+0B
+
+#106000
+b1001 (
+
+#110000
+0!
+0)
+
+#115000
+1!
+b111 $
+1)
+b111 ,
+b11001100 -
+b1 /
+b110 0
+b0 2
+b11110 3
+b0 4
+b11 :
+b0 ;
+b0 =
+b111 @
+b11 C
+b0 D
+b0 E
+
+#116000
+b1010 (
+
+#120000
+0!
+0)
+
+#125000
+1!
+b1000 $
+1)
+b1000 ,
+b0 .
+b10 /
+b11100010 2
+b11 :
+1?
+b1000 @
+1I
+
+#126000
+b1011 (
+
+#130000
+0!
+0)
+
+#135000
+1!
+1)
+b0 /
+b11 :
+0?
+0I
+
+#136000
+b1100 (
+
+#140000
+0!
+0)
+
+#145000
+1!
+b1001 $
+1)
+b1001 ,
+b11100010 -
+b1 /
+b111 0
+b0 1
+b0 2
+b0 3
+b0 5
+16
+b11110 9
+b0 :
+b1001 @
+b0 C
+b0 H
+b11110 J
+
+#146000
+b1101 (
+
+#150000
+0!
+0)
+
+#155000
+1!
+b1010 $
+1)
+b1010 ,
+b10 /
+b1010 @
+
+#156000
+b1110 (
+
+#160000
+0!
+0)
+
+#165000
+1!
+b0 $
+1)
+b0 ,
+b0 /
+b100110 2
+b0 @
+
+#166000
+b1111 (
+
+#170000
+0!
+0)
+
+#175000
+1!
+b1 $
+1)
+b1 ,
+b100110 -
+b1 /
+b1 0
+b1 1
+b1010 2
+b1 @
+
+#176000
+b10000 (
+
+#180000
+0!
+0)
+
+#185000
+1!
+b10 $
+1)
+b10 ,
+b1010 .
+b10 /
+b101010 2
+b1010 =
+1>
+b10 @
+1B
+b1010 E
+
+#186000
+b10001 (
+
+#190000
+0!
+0)
+
+#195000
+1!
+1)
+b0 /
+b1010 =
+0>
+0B
+
+#196000
+b10010 (
+
+#200000
+0!
+0)
+
+#205000
+1!
+b11 $
+1)
+b11 ,
+b101010 -
+b1 /
+b10 1
+b10100 2
+b1010 =
+b11 @
+
+#206000
+b10011 (
+
+#210000
+0!
+0)
+
+#215000
+1!
+b100 $
+1)
+b100 ,
+b10100 .
+b10 /
+b1001100 2
+b10100 =
+1>
+b100 @
+1B
+b10100 E
+
+#216000
+b10100 (
+
+#220000
+0!
+0)
+
+#225000
+1!
+1)
+b0 /
+b10100 =
+0>
+0B
+
+#226000
+b10101 (
+
+#230000
+0!
+0)
+
+#235000
+1!
+b101 $
+1)
+b101 ,
+b1001100 -
+b1 /
+b10 0
+b11 1
+b101000 2
+b101 ;
+b0 =
+b101 @
+b101 D
+b0 E
+
+#236000
+b10110 (
+
+#240000
+0!
+0)
+
+#245000
+1!
+b110 $
+1)
+b110 ,
+b101000 .
+b10 /
+b11001100 2
+b1010 3
+b10100 4
+b11110 5
+06
+b1 :
+b10 ;
+b11110 =
+1>
+b110 @
+1B
+b1 C
+b10 D
+b11110 E
+b11110 H
+
+#246000
+b10111 (
+
+#250000
+0!
+0)
+
+#255000
+1!
+1)
+b0 /
+b0 9
+b1 :
+b10 ;
+b11110 =
+0>
+0B
+b0 J
+
+#256000
+b11000 (
